@@ -178,7 +178,7 @@ class Main extends Base implements Listener{
 									$file = $this->getDataFolder()."Islands/".$sender->getName().".txt";
 									unlink($file);
 									$newFile = fopen($file, "w");
-									fwrite($newFile, $sender->x.", ".$sender->y.", ".$sender->z);;
+									fwrite($newFile, $sender->x.", ".$sender->y.", ".$sender->z);
 									$sender->sendMessage("Set your home.");
 									return true;
 								}else{
